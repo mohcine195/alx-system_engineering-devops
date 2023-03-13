@@ -1,9 +1,2 @@
 #!/bin/bash
-count=1
-while read line; do
-  if [ $count -eq 3 ]; then
-    echo $line
-    break
-  fi
-  count=$((count+1))
-done < iacta
+head -3 iacta | tail -1
